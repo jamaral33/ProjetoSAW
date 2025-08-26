@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@font-face{
+    font-family: "MaggieMoo";
+    src: url(../assets/fontes/MaggieMoo.otf)
+}
+@font-face {
+    font-family: "MysticSingler";
+    src: url(../assets/fontes/mysticsingleri.ttf);
+}
+@font-face {
+    font-family: "MonsterScream";
+    src: url(../assets/fontes/MonsterScream.ttf);
+}
+
 :root{
     --vermelhoHeader: #2C0000;
-    --vermelhoTexto: #B80000
+    --vermelhoTexto: #B80000;
+    --pretoFundo: #0A0101;
+    --verdeFundo: #031303;
+    --vermelhoBanner: #591111;
+    --brancoTexto: #A09C78;
+    --vermelhoStroke: #3F0B0B; 
+    --branco: #FFFFFF;
+    --cinza: #161616;
 }
 
 
@@ -10,11 +32,176 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100%;
+    background-color: var(--pretoFundo);
+    background-image: url(../assets/imagens/estatica.png);
+}
 header{
+    display: flex;
+    align-items: center;
     background-color: var(--vermelhoHeader);
+    height: 13vh;
+    font-family: "Courier Prime", monospace;
+    font-size: 17px;
+    font-weight: 400;
 }
 .logoHeader{
     display: flex;
     align-items: center;
     color: var(--vermelhoTexto);
+}
+.logoHeader img{
+    width: 100px;
+    height: 86px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 100%;
+    background-color: var(--verdeFundo);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../assets/imagens/estatica.png);
+
+
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    color: var(--vermelhoHeader);
+    background-color: var(--vermelhoBanner);
+    width: 100%;
+    height: 50vh;
+    font-family: "MaggieMoo", sans-serif;
+    font-weight: 400;
+
+}
+.banner h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    opacity: 0.75;
+}
+
+.bemVindo{
+    overflow: hidden;
+}
+#bemVindoEsquerda{
+    position: absolute;
+    top: 35vh;
+    left: 3vw;
+}
+#bemVindoDireita{
+    position: absolute;
+    top: 35vh;
+    right: 4vw;
+}
+#bemVindoCentro{
+    position: absolute;
+    top: 55vh;
+    left: 40vw;
+    opacity: 1;
+}
+
+.bemVindo h1{
+    font-family: "MysticSingler", sans-serif;
+    color: var(--brancoTexto);
+    font-size: 9rem;
+    white-space: nowrap;
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: var(--vermelhoStroke);
+    opacity: 0.75;
+}
+.imagemBemVindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.imagemBemVindo img{
+    width: 45%;
+}
+.sangue{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+}
+#sangueEsquerda{
+     position: absolute;
+    left: 3vw;
+    top: 41.5vh;
+}
+#sangueDireita{
+    position: absolute;
+    right: 3vw;
+    top: 41.5vh;
+}
+.info{
+    padding: 150px 70px 70px 70px
+}
+.suspense{
+    display: flex;
+    flex-direction: row;
+}
+.texto{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branco);
+
+}
+.texto h1{
+    font-family: "MonsterScream", sans-serif;
+    font-size: 3.5rem;
+    padding-bottom: 30px;
+}
+.texto p{
+    font-family: "Montaga", sans-serif;
+    font-size: 1.75rem;
+    text-align: justify;
+    font-weight: 400;
+
+}
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 70vh;
+    margin-left: 70px;
+    background-color: var(--vermelhoHeader);
+}
+.quadrado{
+    position: relative;
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pretoFundo);
+}
+.quadrado2{
+    width: 95%;
+    height: 80%;
+    background-color: var(--cinza);
+}
+#tv{
+    position: relative;
+    top: 0%;
+
+    width: 100%;
+    height: 100%;
+}
+
+#slide{
+    position: absolute;
+    height: 65%;
+    width: 57%;
+    top: 15%;
+    left: 14%;
+
 }
