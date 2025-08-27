@@ -23,6 +23,10 @@
     --vermelhoStroke: #3F0B0B; 
     --branco: #FFFFFF;
     --cinza: #161616;
+    --bege: #2D1B1B;
+    --verdeTexto: #9AA882;
+    --verdeFundo: #1E2513;
+
 }
 
 
@@ -175,6 +179,15 @@ main{
     margin-left: 70px;
     background-color: var(--vermelhoHeader);
 }
+.sliderPequeno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 70vh;
+    margin-left: 70px;
+    background-color: var(--vermelhoHeader);
+}
 .quadrado{
     position: relative;
     width: 95%;
@@ -204,4 +217,51 @@ main{
     top: 15%;
     left: 14%;
 
+}
+
+#sawX{
+    position: absolute;
+    top: 135%;
+    left: 60%;
+    width: 35vw;
+    height: 20vw;
+}
+
+.filmes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+    background-color: var(--bege);
+    border: 5px solid black;
+    height: 1000px;
+}
+ ul h2{
+    background-color: var(--verdeFundo);
+    font-family: 'MonsterScream', sans-serif;
+    color: var(--verdeTexto);
+    font-size: 2rem;
+}
+ ul li a img{
+    width: 50px;
+    height: 50px;
+}
+ ul li a{
+    display: flex;
+    background-color: var(--vermelhoHeader);
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--verdeTexto);
+    font-family: 'Montaga', sans-serif;
+    border: 5px solid #000000;
+    cursor: pointer;
+}
+ul li a:hover{
+    color: var(--vermelhoTexto);
 }
