@@ -146,7 +146,7 @@ main{
 .info{
     padding: 150px 70px 70px 70px
 }
-.suspense{
+.saw{
     display: flex;
     flex-direction: row;
 }
@@ -266,4 +266,22 @@ ul{
 }
 ul li a:hover{
     color: var(--vermelhoTexto);
+}
+
+#sangueSlider{
+    position: absolute;
+    width: 58%;
+    height: 58%;
+    top: 149%
+}
+.suspense{
+    color: var(--branco);
+    & p{
+        font-family: 'Montaga', sans-serif;
+        font-size: 1rem;
+    }
+    & h1{
+         font-family: 'MonsterScream', sans-serif;
+
+    }
 }
