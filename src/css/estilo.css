@@ -241,6 +241,7 @@ ul{
     background-color: var(--bege);
     border: 5px solid black;
     height: 1000px;
+    list-style: none;
 }
  ul h2{
     background-color: var(--verdeFundo);
@@ -261,6 +262,7 @@ ul{
     font-family: 'Montaga', sans-serif;
     border: 5px solid #000000;
     cursor: pointer;
+    text-decoration: none;
 }
 ul li a:hover{
     color: var(--vermelhoTexto);

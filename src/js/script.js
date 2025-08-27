@@ -1,4 +1,4 @@
-const sliderImagens = ["../src/assets/imagens/slider1.gif", "../src/assets/imagens/slider2.jpg", "../src/assets/imagens/slider3.gif"]
+const sliderImagens = ["./src/assets/imagens/slider1.gif", "./src/assets/imagens/slider2.jpg", "./src/assets/imagens/slider3.gif"]
 let mostrarEstatica = false;
 const slider = document.querySelector("#slide")
 let i = 0
@@ -8,7 +8,7 @@ function trocarSlide(){
         i = 0
     }
     if(mostrarEstatica) {
-        slider.src = "../src/assets/imagens/estatica.gif"
+        slider.src = "./src/assets/imagens/estatica.gif"
         mostrarEstatica = false
         setTimeout(trocarSlide, 1000)
 
