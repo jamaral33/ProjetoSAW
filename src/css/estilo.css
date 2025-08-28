@@ -181,6 +181,7 @@ main{
     background-color: var(--vermelhoHeader);
 }
 .sliderPequeno{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,6 +239,10 @@ main{
     display: flex;
     flex-direction: column;
 }
+.lista{
+    position: relative;
+    margin-right: 50px;
+}
 ul{
     display: flex;
     flex-direction: column;
@@ -245,7 +250,7 @@ ul{
     margin-left: 5%;
     margin-right: 5%;
     background-color: var(--bege);
-    border: 5px solid black;
+    border: 6px solid black;
     height: 90vh;
     list-style: none;
     z-index: 2;
@@ -275,19 +280,26 @@ ul li a:hover{
     color: var(--vermelhoTexto);
 }
 
-#sangueSlider{
+.sangueSlider{
     position: absolute;
-    width: 57%;
+    width: 30vw;
     height: 58%;
-    top: 157vh
+}
+.sliderDireita{
+    right: -5%;
+    top: -25%;
+}
+.sliderEsquerda{
+    left: -5%;
+    top: -25%;
 }
 #sangueLista{
     position: absolute;
-    width: 23%;
+    width: 100%;
     height: 30vh;
-    top: 259vh;
-    left: 68.5vw;
-    z-index: 1;
+    bottom: 1%;
+    z-index: 0;
+    pointer-events: none;
 }
 .suspense{
     width: 80%;
@@ -327,6 +339,6 @@ footer h2{
     width: 20vw;
     height: 45vh;
     top: 260vh;
-    left: 53vw;
-    z-index: 1;
+    left: 55vw;
+    pointer-events: none;
 }
