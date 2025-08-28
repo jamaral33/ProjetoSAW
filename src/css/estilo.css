@@ -37,9 +37,10 @@
 }
 
 body{
-    height: 100%;
     background-color: var(--pretoFundo);
     background-image: url(../assets/imagens/estatica.png);
+    display: flex;
+    flex-direction: column;
 }
 header{
     display: flex;
@@ -64,11 +65,11 @@ main{
     display: flex;
     flex-direction: column;
     width: 90vw;
-    height: 100%;
     background-color: var(--verdeFundo);
     margin-left: auto;
     margin-right: auto;
     background-image: url(../assets/imagens/estatica.png);
+    padding-bottom: 50px;
 
 
 }
@@ -183,7 +184,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 55%;
+    width: 80%;
     height: 70vh;
     margin-left: 70px;
     background-color: var(--vermelhoHeader);
@@ -221,8 +222,8 @@ main{
 
 #sawX{
     position: absolute;
-    top: 135%;
-    left: 60%;
+    top: 135vh;
+    left: 60vw;
     width: 35vw;
     height: 20vw;
 }
@@ -232,16 +233,22 @@ main{
     flex-direction: row;
     margin-top: 150px;
 }
-
+.infoSuspense{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
 ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: var(--bege);
     border: 5px solid black;
-    height: 1000px;
+    height: 90vh;
     list-style: none;
+    z-index: 2;
 }
  ul h2{
     background-color: var(--verdeFundo);
@@ -270,18 +277,35 @@ ul li a:hover{
 
 #sangueSlider{
     position: absolute;
-    width: 58%;
+    width: 57%;
     height: 58%;
-    top: 149%
+    top: 146.5vh
+}
+#sangueLista{
+    position: absolute;
+    width: 23%;
+    height: 58%;
+    top: 236vh;
+    left: 68.5vw;
+    z-index: 1;
 }
 .suspense{
+    width: 80%;
+    margin-top: 70PX;
+    margin-left: 70px;
+    margin-bottom: 70px;
+    text-align: justify;
     color: var(--branco);
     & p{
         font-family: 'Montaga', sans-serif;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     & h1{
          font-family: 'MonsterScream', sans-serif;
-
+        font-size: 3rem;
     }
+}
+footer{
+ background-color: var(--vermelhoHeader);
+
 }
