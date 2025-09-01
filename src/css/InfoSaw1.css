@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@font-face{
+    font-family: "MaggieMoo";
+    src: url(../assets/fontes/MaggieMoo.otf)
+}
+@font-face {
+    font-family: "MysticSingler";
+    src: url(../assets/fontes/mysticsingleri.ttf);
+}
+@font-face {
+    font-family: "MonsterScream";
+    src: url(../assets/fontes/MonsterScream.ttf);
+}
+
+:root{
+    --vermelhoHeader: #2C0000;
+    --vermelhoTexto: #B80000;
+    --pretoFundo: #0A0101;
+    --verdeFundo: #031303;
+    --vermelhoBanner: #591111;
+    --brancoTexto: #A09C78;
+    --vermelhoStroke: #3F0B0B; 
+    --branco: #FFFFFF;
+    --cinza: #161616;
+    --bege: #2D1B1B;
+    --verdeTexto: #9AA882;
+    --verdeFundo: #1E2513;
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--pretoFundo);
+    background-image: url(../assets/imagens/estatica.png);
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    background-color: var(--vermelhoHeader);
+    height: 13vh;
+    font-family: "Courier Prime", monospace;
+    font-size: 17px;
+    font-weight: 400;
+}
+.logoHeader{
+    display: flex;
+    align-items: center;
+    color: var(--vermelhoTexto);
+}
+.logoHeader img{
+    width: 100px;
+    height: 86px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    background-color: var(--verdeFundo);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../assets/imagens/estatica.png);
+    padding-bottom: 50px;
+
+
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    color: var(--vermelhoHeader);
+    background-color: var(--vermelhoBanner);
+    width: 100%;
+    height: 50vh;
+    font-family: "MaggieMoo", sans-serif;
+    font-weight: 400;
+
+}
+.banner h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    opacity: 0.75;
+}
+
+.bemVindo{
+    overflow: hidden;
+}
+#bemVindoEsquerda{
+    position: absolute;
+    top: 35vh;
+    left: 3vw;
+}
+#bemVindoDireita{
+    position: absolute;
+    top: 35vh;
+    right: 4vw;
+}
+#bemVindoCentro{
+    position: absolute;
+    top: 55vh;
+    left: 40vw;
+    opacity: 1;
+}
+
+.bemVindo h1{
+    font-family: "MysticSingler", sans-serif;
+    color: var(--brancoTexto);
+    font-size: 9rem;
+    white-space: nowrap;
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: var(--vermelhoStroke);
+    opacity: 0.75;
+}
+.imagemBemVindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.imagemBemVindo img{
+    width: 45%;
+}
+.sangue{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+}
+#sangueEsquerda{
+     position: absolute;
+    left: 3vw;
+    top: 41.5vh;
+}
+#sangueDireita{
+    position: absolute;
+    right: 3vw;
+    top: 41.5vh;
+}

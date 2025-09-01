@@ -1,4 +1,4 @@
-const sliderImagens = ["./src/assets/imagens/slider1.gif", "./src/assets/imagens/slider2.jpg", "./src/assets/imagens/slider3.gif"]
+const sliderImagens = ["./src/assets/imagens/GordonTape(saw1).gif", "./src/assets/imagens/AdamScreaming(saw1).jpg", "./src/assets/imagens/AmandaBearTrap(saw1).gif"]
 let mostrarEstatica = false;
 const slider = document.querySelector("#slide")
 let i = 0
