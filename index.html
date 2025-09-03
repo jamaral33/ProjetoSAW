@@ -14,7 +14,67 @@
             <img src = "./src/assets/imagens/IconHeader.png">
             <h2>SawOS1.0</h2>
         </div>
+        <button id="menuBotao">
+            <img src="./src/assets/imagens/menu.svg" onclick=trocarMenu()>
+        </button>
     </header>
+    <nav id="menu" class="close">
+        <img src="./src/assets/imagens/serra.svg" id="serraMenu">
+        <ul>
+            <li id="menuHeader">
+                <h1>SAW</h1>
+                <button id="fecharBotao" onclick=trocarMenu()>
+                    <img src="./src/assets/imagens/close.svg">
+                </button>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./src/assets/imagens/home.svg" class="iconeMenu">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <button class="dropdownButton" onclick=trocarSubMenu(this)>
+                    <span>Filmes</span>
+                    <img src="./src/assets/imagens/seta.svg" class="iconeMenu">
+                </button>
+                <ul class="subMenu">
+                    <li>
+                        <a href="./InfoSaw1.html">SAW I</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW II</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW III</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW IV</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW V</a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#">SAW VI</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW: O final</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW: JIGSAW</a>
+                    </li>
+                    <li>
+                        <a href="#">Espiral: O legado dos jogos mortais</a>
+                    </li>
+                    <li>
+                        <a href="#">Jogos mortais X</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
     <main>
         <div class="banner">
             <h2>TUDO SOBRE OS JOGOS MORTAIS</h2>

@@ -22,3 +22,15 @@ function trocarSlide(){
     }
 }
 trocarSlide()
+
+function inverterSeta(x){
+    x.querySelector('img').classList.toggle('setaCima')
+}
+function trocarSubMenu(x){
+    inverterSeta(x)
+    x.nextElementSibling.classList.toggle('show')
+}
+
+function trocarMenu(){
+    menu.classList.toggle('close')
+}
