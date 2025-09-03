@@ -3,63 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAW I</title>
-    <link rel="stylesheet" href="./src/css/InfoSaw1.css">
-    <script src="./src/js/slider.js" defer></script>
-    <link rel="shortcut icon" href="./src/assets/imagens/IconHeader.png">
+    <link rel = "stylesheet" href="./src/css/estilo.css">
+    <title>SAW</title>
+    <link rel="shortcut icon" href="./src/assets/imagens/IconHeader.png"/>
+    <script src="./src/js/script.js" defer></script>
 </head>
 <body>
-
     <header>
-        <div class ="banner">
-            <img src = "src/assets/imagens/IconHeader.png" alt="Logo">
+        <div class="logoHeader">
+            <img src = "./src/assets/imagens/IconHeader.png">
+            <h2>SawOS1.0</h2>
         </div>
+        <button id="menuBotao">
+            <img src="./src/assets/imagens/menu.svg" onclick=trocarMenu()>
+        </button>
     </header>
-
+    <nav id="menu" class="close">
+        <img src="./src/assets/imagens/serra.svg" id="serraMenu">
+        <ul>
+            <li id="menuHeader">
+                <h1>SAW</h1>
+                <button id="fecharBotao" onclick=trocarMenu()>
+                    <img src="./src/assets/imagens/close.svg">
+                </button>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./src/assets/imagens/home.svg" class="iconeMenu">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <button class="dropdownButton" onclick=trocarSubMenu(this)>
+                    <span>Filmes</span>
+                    <img src="./src/assets/imagens/seta.svg" class="iconeMenu">
+                </button>
+                <ul class="subMenu">
+                    <li>
+                        <a href="./InfoSaw1.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW II</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW III</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW IV</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW V</a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#">SAW VI</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW: O final</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW: JIGSAW</a>
+                    </li>
+                    <li>
+                        <a href="#">Espiral: O legado dos jogos mortais</a>
+                    </li>
+                    <li>
+                        <a href="#">Jogos mortais X</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
     <main>
         <div class="banner">
-            <h2>TUDO SOBRE JOGOS MORTAIS</h2>
-            <!-- Tô fazendo umas mudanças, principalmente na parte de nomear as class e imagem, pra ficar um pouco menos infernal o codigo :)-->
-            <div class="InfoFilme">
-                <h1 id="FilmeEsquerda">FILME</h1>
-                <h1 id="FilmeDireita">SAW</h1>
-                <h1 id="FilmeCentro">2004</h1>
-            </div>
+            <h2>TUDO SOBRE OS JOGOS MORTAIS</h2>
+            <div class="bemVindo">
+                <h1 id="bemVindoEsquerda">FILME</h1>
+                <h1 id="bemVindoDireita">SAW</h1>
+                <h1 ID ="bemVindoCentro">2004</h1>
 
-            <div class="imagemBannerCentro">
-                <img src="./src/assets/imagens/jigsaw.png" alt="JigSaw">
+            </div>
+            <div class="imagemBemVindo">
+                <img src="./src/assets/imagens/jigsaw.png" alt="">
             </div>
         </div>
+        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueEsquerda">
+        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueDireita">
+        <div class="info">
+            <div class="saw">
+                <div class="texto">
+                    <h1>SINOPSE DO FILME</h1>
+                    <p>
 
-        <img src="./src/assets/imagens/sangue.png" class="sangue" id="SangueEsquerda">
-        <img src="./src/assets/imagens/sangue.png" class="sangue" id="SangueDireita">
-        
-        <div class="Sinopse">
-            <h1>SINOPSE DO FILME</h1>
-            <P>Dois homens acordam acorrentados em um banheiro como prisioneiros de um assassino em série que leva suas vítimas a situações limítrofes em um jogo macabro. Para sobreviver, eles terão de desvendar juntos as peças desse quebra-cabeças doentio.</P>
-        </div>
-        <div class="slider">
-            <div class="quadrado">
-                <div class="quadrado2">
-                    <img src ="./src/assets/imagens/tv.png">
-                    <img src="./src/assets/imagens/slider1.gif">
+O filme começa com Adam e o Dr. Lawrence Gordon, que acordam presos em um banheiro sujo e decrépito. Eles estão acorrentados a canos opostos, com um corpo inerte entre eles. Gordon é instruído a matar Adam até as seis da tarde, ou sua esposa e filha serão assassinadas. Enquanto isso, o filme revela, em flashbacks, a história por trás do Jigsaw, um serial killer que não mata suas vítimas, mas as força a jogar jogos de vida ou morte para testar sua vontade de viver.
+
+O detetive David Tapp e seu parceiro, o detetive Steven Sing, estão investigando os crimes, e suas buscas os levam a uma fábrica abandonada, o covil de Jigsaw. Ao mesmo tempo, a esposa de Gordon, Alison, e sua filha, Diana, conseguem escapar do sequestrador. Tapp, no entanto, acredita que Gordon é o Jigsaw.
+
+De volta ao banheiro, com o tempo esgotando, Gordon tenta matar Adam atirando nele, mas falha. O Jigsaw, que estava se passando pelo corpo inerte, se levanta e revela sua identidade. O Jigsaw sai do banheiro, deixando Adam preso. O filme termina com Adam gritando, enquanto o Jigsaw o deixa para trás, trancado para sempre. </p>
                 </div>
-            </div>
-        </div>
-        <img src="src/assets/imagens/sawXLogo.png" id="sawX">
-        <div class="slider sliderPequeno">
+                <div class="slider">
                     <div class="quadrado">
                         <div class="quadrado2">
-                            <img src="./src/assets/imagens/tv.png" id="tv"> 
-                              <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide">
+                             <img src="./src/assets/imagens/tv.png" id="tv">
+                            <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide">
+                        </div>
+                    </div>
                 </div>
             </div>
-             <img src ="src/assets/imagens/sangue.png" class="SangueSlider">
-             <img src ="src/assets/imagens/sangue.png" class="SangueSlider">
-                           <div class="lista">
+        </div>
+        <img src="./src/assets/imagens/sawXLogo.png" id="sawX">
+        <div class="filmes">
+                <div class="infoSuspense">
+                    <div class="slider sliderPequeno">
+                    <div class="quadrado">
+                        <div class="quadrado2">
+                             <img src="./src/assets/imagens/tv.png" id="tv">
+                            <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide">
+                        </div>
+                    </div>
+                    <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderEsquerda">
+                    <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderDireita">
+                </div>
+                    <div class="suspense">
+                        <h1>BASTIDORES</h1>
+                        <p>Para manter os atores mais conectados com seus personagens, as cenas foram todas filmadas em ordem cronológica, foram cerca de 18 dias de filmagens.</p>
+                    </div>
+                </div>
+                <div class="lista">
+                    
+                </div>
+                <div class="lista">
                     <ul>
                         <h2>ACOMPANHE OS FILMES DA FRANQUIA</h2>
-                        <li><a href="./index.html"><img src="./src/assets/imagens/playIcon.svg">Voltar para a home</a></li>
+                        <li><a href="./InfoSaw1.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais I(2004)</a></li>
                         <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais II(2005)</a></li>
                         <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais III(2006)</a></li>
                         <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais IV(2007)</a></li>
@@ -72,10 +149,10 @@
                     </ul>
                         <img src="./src/assets/imagens/sangue.png" id="sangueLista">           
 
-                </div>  
-                <h1>BASTIDORES</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque eget libero tincidunt dignissim. Cras scelerisque sapien at tortor suscipit, quis tristique metus lacinia. In nunc urna, tincidunt vel aliquam sit amet, tristique eu velit. Nunc et enim erat. Quisque tincidunt tempus ligula sit amet euismod. Donec tincidunt mattis ipsum. Sed nec finibus diam. Vivamus laoreet tempus convallis. Vestibulum suscipit accumsan mauris, ac fermentum odio maximus non. Mauris elementum consectetur arcu eu facilisis. Nam egestas, mauris ut rhoncus cursus, lorem metus blandit dolor, id euismod est massa et sem. Mauris tincidunt, justo ut congue condimentum, purus elit dapibus metus, eget sodales arcu sapien quis purus. Pellentesque viverra elementum scelerisque. Donec dictum diam et aliquam sodales. Mauris tincidunt ligula eleifend neque commodo, sed ornare sem cursus. Aliquam posuere dictum metus et dapibus. Sed est nunc, efficitur in dolor sagittis, consectetur sodales augue. Suspendisse eu vestibulum elit. Duis venenatis tempus risus eu finibus. Sed mollis lacinia mi non eleifend. Cras porttitor mauris luctus, dignissim purus at, posuere massa.</p>
-            </main>
+                </div>
+        </div>
+        <img src="./src/assets/imagens/triciclo.png" id="triciclo">
+    </main>
     <footer>
         <div class="logoHeader">
             <img src = "./src/assets/imagens/IconHeader.png">
@@ -83,7 +160,9 @@
         </div>
         <div class="contatos">
             <a href="https://www.instagram.com/saw/"><img src="./src/assets/imagens/instagram.png"></a>
+            <a href="https://br.linkedin.com/in/jo%C3%A3o-paulo-amaral-de-araujo-b39233310?trk=people-guest_people_search-card"><img src="./src/assets/imagens/linkedin.png"></a>
             <a href="https://github.com/jamaral33/ProjetoSAW"><img src="./src/assets/imagens/github.png"></a>"
         </div>
+    </footer>
 </body>
 </html>

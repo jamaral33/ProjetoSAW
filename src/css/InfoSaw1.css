@@ -29,7 +29,6 @@
 
 }
 
-
 *{
     padding: 0;
     margin: 0;
@@ -42,10 +41,12 @@ body{
     display: flex;
     flex-direction: column;
 }
+/*HEADER*/
 
 header{
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--vermelhoHeader);
     height: 13vh;
     font-family: "Courier Prime", monospace;
@@ -61,7 +62,116 @@ header{
     width: 100px;
     height: 86px;
 }
+/*MENU*/
+#menu.close{
+    overflow: hidden;
+    right: -32vw
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 32vw;
+    height: 100vh;
+    padding: 5px 1em;
+    z-index: 3;
+    padding-left: 15vw;
+    color: var(--vermelhoTexto);
+    border-right: 1px solid var(--pretoFundo);
+    transition: 0.5s ease-in-out;
+}
+#serraMenu{
+    position: absolute;
+    top: -15vw;
+    right: -53vw;
+    height: 150vh;
+    width: 100vw;
+    z-index: -1;
+    animation: rodarSerra 10s linear infinite;
+}
+@keyframes rodarSerra {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#menuHeader{
+    font-family: 'MonsterScream',sans-serif;
+    gap: .5em;
+    font-size: 4em;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 30px;
+ 
+}
 
+#menu ul{
+    display: flex;
+    flex-direction: column ;
+    list-style: none;
+}
+#menu a, #menu .dropdownButton, #menuHeader button{
+    font-family: 'Montaga', sans-serif;
+    font-size: 2rem;
+    color: var(--vermelhoTexto);
+    padding: .5em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+}
+.iconeMenu{
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+    
+}
+.dropdownButton, #fecharBotao{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background:none;
+    font: inherit;
+    cursor: pointer;
+}
+#fecharBotao img{
+    width: 70px;
+    height: 70px;
+}
+.subMenu{
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+}
+#menu .subMenu a{
+    margin-left: 1em;
+    font-size: 1.5em;
+
+}
+#menu .subMenu.show{
+    /*Usado para calcular dinamicamente a altura da div pra conseguir usar a animação*/
+    /*Só disponivel no edge e chrome :(*/
+    height: calc-size(auto, size); 
+}
+.setaCima{
+    transform: rotate(180deg);
+}
+#menuBotao{
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    & img{
+        width: 50px;
+        height: 50px;
+    }
+}
+/*main*/
 main{
     display: flex;
     flex-direction: column;
@@ -98,7 +208,7 @@ main{
 #bemVindoEsquerda{
     position: absolute;
     top: 35vh;
-    left: 3vw;
+    left: 5px;
 }
 #bemVindoDireita{
     position: absolute;
@@ -144,4 +254,202 @@ main{
     position: absolute;
     right: 3vw;
     top: 41.5vh;
+}
+.info{
+    padding: 150px 70px 70px 70px
+}
+.saw{
+    display: flex;
+    flex-direction: row;
+}
+.texto{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branco);
+
+}
+.texto h1{
+    font-family: "MonsterScream", sans-serif;
+    font-size: 3.5rem;
+    padding-bottom: 30px;
+}
+.texto p{
+    font-family: "Montaga", sans-serif;
+    font-size: 1.75rem;
+    text-align: justify;
+    font-weight: 400;
+
+}
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 70vh;
+    margin-left: 70px;
+    background-color: var(--vermelhoHeader);
+}
+.sliderPequeno{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 70vh;
+    margin-left: 70px;
+    background-color: var(--vermelhoHeader);
+}
+.quadrado{
+    position: relative;
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pretoFundo);
+}
+.quadrado2{
+    width: 95%;
+    height: 80%;
+    background-color: var(--cinza);
+}
+#tv{
+    position: relative;
+    top: 0%;
+
+    width: 100%;
+    height: 100%;
+}
+
+#slide{
+    position: absolute;
+    height: 65%;
+    width: 57%;
+    top: 15%;
+    left: 14%;
+
+}
+
+#sawX{
+    position: absolute;
+    top: 135vh;
+    left: 60vw;
+    width: 35vw;
+    height: 20vw;
+}
+
+.filmes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+.infoSuspense{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+.lista{
+    position: relative;
+    margin-right: 50px;
+}
+.lista ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--bege);
+    border: 6px solid black;
+    height: 90vh;
+    list-style: none;
+    z-index: 2;
+}
+.lista ul h2{
+    background-color: var(--verdeFundo);
+    font-family: 'MonsterScream', sans-serif;
+    color: var(--verdeTexto);
+    font-size: 2rem;
+}
+.lista ul li a img{
+    width: 50px;
+    height: 50px;
+}
+.lista ul li a{
+    display: flex;
+    background-color: var(--vermelhoHeader);
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--verdeTexto);
+    font-family: 'Montaga', sans-serif;
+    border: 5px solid #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+.lista ul li a:hover{
+    color: var(--vermelhoTexto);
+}
+
+.sangueSlider{
+    position: absolute;
+    width: 30vw;
+    height: 58%;
+}
+.sliderDireita{
+    right: -5%;
+    top: -25%;
+}
+.sliderEsquerda{
+    left: -5%;
+    top: -25%;
+}
+#sangueLista{
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    bottom: 1%;
+    z-index: 0;
+    pointer-events: none;
+}
+.suspense{
+    width: 80%;
+    margin-top: 70PX;
+    margin-left: 70px;
+    margin-bottom: 70px;
+    text-align: justify;
+    color: var(--branco);
+    & p{
+        font-family: 'Montaga', sans-serif;
+        font-size: 1.5rem;
+    }
+    & h1{
+         font-family: 'MonsterScream', sans-serif;
+        font-size: 3rem;
+    }
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--vermelhoHeader);
+    height: 13vh;
+}
+footer h2{
+    font-size: 1rem;
+}
+.contatos a{
+    padding:0 25px 25px 0;
+}
+.contatos img{
+    width: 50px;
+    height: 50px;
+}
+#triciclo{
+    position: absolute;
+    width: 20vw;
+    height: 45vh;
+    top: 260vh;
+    left: 55vw;
+    pointer-events: none;
 }
