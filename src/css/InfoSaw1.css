@@ -334,13 +334,13 @@ main{
 
 #sawX{
     position: absolute;
-    top: 135vh;
-    left: 60vw;
+    top: 140vh;
+    left: 70vw;
     width: 35vw;
     height: 20vw;
 }
 
-.filmes{
+.filmes{    
     display: flex;
     flex-direction: row;
     margin-top: 150px;
@@ -408,7 +408,7 @@ main{
     position: absolute;
     width: 100%;
     height: 30vh;
-    bottom: 1%;
+    bottom: 50%;
     z-index: 0;
     pointer-events: none;
 }
