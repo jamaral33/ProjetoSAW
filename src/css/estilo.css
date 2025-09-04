@@ -498,6 +498,8 @@ footer h2{
         top: 30vh
     }
     .imagemBemVindo{
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -505,7 +507,7 @@ footer h2{
     }
     .imagemBemVindo img{
         position: relative;
-        bottom: -6vh;
+        bottom: -13vh;
     }
     #sangueEsquerda{
         position: absolute;
