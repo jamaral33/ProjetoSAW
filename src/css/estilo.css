@@ -498,8 +498,25 @@ footer h2{
         top: 30vh
     }
     .imagemBemVindo{
-        position: relative;
-        top: 13vh;
-        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
     }
+    .imagemBemVindo img{
+        position: relative;
+        bottom: -6vh;
+    }
+    #sangueEsquerda{
+        position: absolute;
+        left: -1vw;
+        top: 18vh; 
+    }
+    #sangueDireita{
+        position: absolute;
+        right: -1vw;
+        top: 18vh; 
+    }
+
+
 }
