@@ -291,6 +291,7 @@ main{
     margin-left: 70px;
     background-color: var(--vermelhoHeader);
 }
+
 .sliderPequeno{
     position: relative;
     display: flex;
@@ -324,6 +325,14 @@ main{
 }
 
 #slide{
+    position: absolute;
+    height: 65%;
+    width: 57%;
+    top: 15%;
+    left: 14%;
+
+}
+#slide2{
     position: absolute;
     height: 65%;
     width: 57%;

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./src/css/InfoSaw5.css">
+    <title>SAW</title>
+    <link rel="shortcut icon" href="./src/assets/imagens/IconHeader.png"/>
+    <script src="./src/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logoHeader">
+            <img src = "./src/assets/imagens/IconHeader.png">
+            <h2>SawOS1.0</h2>
+        </div>
+        <button id="menuBotao">
+            <img src="./src/assets/imagens/menu.svg" onclick=trocarMenu()>
+        </button>
+    </header>
+    <nav id="menu" class="close">
+        <img src="./src/assets/imagens/serra.svg" id="serraMenu">
+        <ul>
+            <li id="menuHeader">
+                <h1>SAW</h1>
+                <button id="fecharBotao" onclick=trocarMenu()>
+                    <img src="./src/assets/imagens/close.svg">
+                </button>
+            </li>
+            <li>
+                <a href="./index.html">
+                    <img src="./src/assets/imagens/home.svg" class="iconeMenu">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <button class="dropdownButton" onclick=trocarSubMenu(this)>
+                    <span>Filmes</span>
+                    <img src="./src/assets/imagens/seta.svg" class="iconeMenu">
+                </button>
+                <ul class="subMenu">
+                    <li>
+                        <a href="./InfoSaw1.html">SAW I</a>
+                    </li>
+                    <li>
+                        <a href="./infoSaw2.html">SAW II</a>
+                    </li>
+                    <li>
+                        <a href="./InfoSaw3.html">SAW III</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW IV</a>
+                    </li>
+                    <li>
+                        <a href="./InfoSaw5.html">SAW V</a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#">SAW VI</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW: O final</a>
+                    </li>
+                    <li>
+                        <a href="#">SAW: JIGSAW</a>
+                    </li>
+                    <li>
+                        <a href="#">Espiral: O legado dos jogos mortais</a>
+                    </li>
+                    <li>
+                        <a href="#">Jogos mortais X</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+    <main>
+        <div class="banner">
+            <h2>TUDO SOBRE OS JOGOS MORTAIS</h2>
+            <div class="bemVindo">
+                <h1 id="bemVindoEsquerda">FILME</h1>
+                <h1 id="bemVindoDireita">SAWV</h1>
+                <h1 ID ="bemVindoCentro">2008</h1>
+
+            </div>
+            <div class="imagemBemVindo">
+                <img src="./src/assets/imagens/jigsaw.png" alt="">
+            </div>
+        </div>
+        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueEsquerda">
+        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueDireita">
+        <div class="info">
+            <div class="saw">
+                <div class="texto">
+                    <h1>ENREDO DO FILME</h1>
+                    <p>Após os acontecimentos do quarto filme, o agente Hoffman emerge como o novo sucessor de Jigsaw, mas agora precisa proteger seu segredo. Ele tenta apagar qualquer pista que possa ligá-lo ao legado de John Kramer. Porém, o agente especial Peter Strahm, sobrevivente das últimas armadilhas, desconfia fortemente dele e inicia uma investigação paralela.
+
+Enquanto isso, um novo jogo é colocado em prática. Cinco pessoas — todas envolvidas em um incêndio criminoso com vítimas fatais — são trancadas em uma série de armadilhas conectadas. A cada etapa, eles acreditam que precisam competir entre si, mas, no fim, percebem tarde demais que a cooperação era a chave para sobreviver. Por não trabalharem juntos desde o início, quase todos morrem de forma brutal.
+
+Paralelamente, Strahm segue as pistas deixadas por Jigsaw e descobre as ligações de Hoffman com os crimes. No entanto, Hoffman sempre está um passo à frente. Ele manipula as provas para incriminar Strahm como cúmplice de Jigsaw.
+
+No clímax, Strahm cai em uma armadilha preparada especificamente para ele: uma caixa de vidro com água. Ele acredita que Hoffman ficará preso, mas, na verdade, o detetive é quem armou tudo. Strahm morre afogado, e Hoffman sai ileso, consolidando sua posição como o herdeiro oficial do legado de Jigsaw, agora sem ninguém para expô-lo.</p>
+                </div>
+                <div class="slider">
+                    <div class="quadrado">
+                        <div class="quadrado2">
+                             <img src="./src/assets/imagens/tv.png" id="tv">
+                            <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./src/assets/imagens/sawXLogo.png" id="sawX">
+        <div class="filmes">
+                <div class="infoSuspense">
+                    <div class="slider sliderPequeno">
+                    <div class="quadrado">
+                        <div class="quadrado2">
+                             <img src="./src/assets/imagens/tv.png" id="tv">
+                            <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide2">
+                        </div>
+                    </div>
+                    <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderEsquerda">
+                    <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderDireita">
+                </div>
+                    <div class="suspense">
+                        <h1>BASTIDORES</h1>
+                        <p>Para manter os atores mais conectados com seus personagens, as cenas foram todas filmadas em ordem cronológica, foram cerca de 18 dias de filmagens. O diretor do filme, James Wan queria espelhar as emoções dos personagens pelos movimentos de camera. Ele filmou o Dr.Gordon com "takes" mais estáveis, enquanto Adam foi filmado sem estabilização para conter as emoções de ambos na situação.</p>
+                    </div>
+                </div>  
+                <div class="lista">
+                    <ul>
+                        <h2>ACOMPANHE OS FILMES DA FRANQUIA</h2>
+                        <li><a href="./InfoSaw1.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais I(2004)</a></li>
+                        <li><a href="./infoSaw2.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais II(2005)</a></li>
+                        <li><a href="./InfoSaw3.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais III(2006)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais IV(2007)</a></li>
+                        <li><a href="./InfoSaw5.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais V(2008)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais VI(2009)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais: O final(2010)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais: JigSaw(2017)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Espiral: O legado dos jogos mortais(2021)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais X(2023)</a></li>
+                    </ul>
+                        <img src="./src/assets/imagens/sangue.png" id="sangueLista">           
+
+                </div>
+        </div>
+        <img src="./src/assets/imagens/triciclo.png" id="triciclo">
+    </main>
+    <footer>
+        <div class="logoHeader">
+            <img src = "./src/assets/imagens/IconHeader.png">
+            <h2>@2025-Todos os direitos reservados</h2>
+        </div>
+        <div class="contatos">
+            <a href="https://www.instagram.com/saw/"><img src="./src/assets/imagens/instagram.png"></a>
+            <a href="https://br.linkedin.com/in/jo%C3%A3o-paulo-amaral-de-araujo-b39233310?trk=people-guest_people_search-card"><img src="./src/assets/imagens/linkedin.png"></a>
+            <a href="https://github.com/jamaral33/ProjetoSAW"><img src="./src/assets/imagens/github.png"></a>"
+        </div>
+    </footer>
+</body>
+</html>

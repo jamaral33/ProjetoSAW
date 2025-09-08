@@ -208,17 +208,17 @@ main{
 #bemVindoEsquerda{
     position: absolute;
     top: 35vh;
-    left: 5px;
+    left: 30vh;
 }
 #bemVindoDireita{
     position: absolute;
     top: 35vh;
-    right: 4vw;
+    right: 20vw;
 }
 #bemVindoCentro{
     position: absolute;
     top: 55vh;
-    left: 40vw;
+    left: 41vw;
     opacity: 1;
 }
 
@@ -331,11 +331,19 @@ main{
     left: 14%;
 
 }
+#slide2{
+    position: absolute;
+    height: 65%;
+    width: 57%;
+    top: 15%;
+    left: 14%;
+
+}
 
 #sawX{
     position: absolute;
-    top: 140vh;
-    left: 70vw;
+    top: 150vh;
+    left: 50vw;
     width: 35vw;
     height: 20vw;
 }
@@ -408,7 +416,7 @@ main{
     position: absolute;
     width: 100%;
     height: 30vh;
-    bottom: 50%;
+    bottom: 0.6%;
     z-index: 0;
     pointer-events: none;
 }
