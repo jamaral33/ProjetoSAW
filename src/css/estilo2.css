@@ -296,13 +296,10 @@ main{
 .sliderPequeno
 {
     position: relative;
-    display: flex;
-    align-items: right;
-    justify-content: center;
     background-color: var(--vermelhoHeader);
-    width: 70%;
-    height: 80vh;
-    left: 60vh;
+    width: 55%;
+    margin-left: 600px;
+    bottom: 100px;
 }
 
 .quadrado
@@ -363,7 +360,7 @@ position: absolute;
 .lista{
     position: relative;
     width: 35%;
-    height: 200%;
+    height: 10vh;
     bottom: 300px;
 }
 .lista ul{
@@ -423,22 +420,28 @@ position: absolute;
     margin-top: 500px;
     left: 0.1vw;
 }
-.suspense{
+
+.suspense {
     width: 80%;
-    margin-top: 70PX;
-    margin-left: 70px;
+    margin-top: 0.1px;   /* diminui o valor para subir */
+    margin-left: 40px; /* aumenta para jogar à direita */
     margin-bottom: 70px;
     text-align: justify;
+
     color: var(--branco);
-    & p{
+    
+    & p 
+    {
         font-family: 'Montaga', sans-serif;
         font-size: 1.5rem;
     }
-    & h1{
-         font-family: 'MonsterScream', sans-serif;
+    & h1 
+    {   
+        font-family: 'MonsterScream', sans-serif;
         font-size: 3rem;
     }
 }
+
 footer{
     display: flex;
     align-items: center;
@@ -458,9 +461,12 @@ footer h2{
 }
 #triciclo{
     position: absolute;
-    width: 20vw;
-    height: 45vh;
     top: 260vh;
-    left: 55vw;
+    transform: rotatey(180deg);
     pointer-events: none;
+    display: flex;
+    left: 150vh;
+    margin-top: 300px;
+
+ 
 }
