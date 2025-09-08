@@ -291,6 +291,7 @@ main{
     margin-left: 70px;
     background-color: var(--vermelhoHeader);
 }
+
 .sliderPequeno{
     position: relative;
     display: flex;

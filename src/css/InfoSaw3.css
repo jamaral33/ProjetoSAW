@@ -329,6 +329,13 @@ main{
     width: 57%;
     top: 15%;
     left: 14%;
+}
+#slide2{
+    position: absolute;
+    height: 65%;
+    width: 57%;
+    top: 15%;
+    left: 14%;
 
 }
 
