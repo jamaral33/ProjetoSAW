@@ -1,0 +1,46 @@
+ body 
+ {
+    /* imagem de fundo */
+    background-image: url("../assets/imagens/Flag_of_Saudi_Arabia.svg.png");
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed;   
+    background-color: #222;/
+    min-height: 100vh;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  body {
+  margin: 0;
+  bottom: 10vh;
+  height: 100vh; /* ocupa a altura toda da tela */
+  display: flex; /* ativa flexbox */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+  font-family: sans-serif;
+}
+
+button
+ {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #00ff6e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #30a100;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
