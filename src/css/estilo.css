@@ -462,3 +462,20 @@ footer h2{
     left: 55vw;
     pointer-events: none;
 }
+
+#demiurgo
+{
+    display: block;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0; /* invisível*/
+    transition: opacity 0.3s;
+}
+
+#demiurgo:hover 
+{
+    opacity: 1; /*CONTATO COM O DEMIURGO*/
+}
