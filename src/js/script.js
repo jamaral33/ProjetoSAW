@@ -6,12 +6,14 @@ const sliderImagens = {
     ["./src/assets/imagens/GordonTape(saw1).gif", "./src/assets/imagens/AdamScreaming(saw1).jpg", "./src/assets/imagens/AmandaBearTrap(saw1).gif"],
 
     'InfoSaw3':
-    ["./src/assets/imagens/saw3Slide1.gif", "./src/assets/imagens/slider1.gif", "./src/assets/imagens/saw3Slide2.gif"]
+    ["./src/assets/imagens/saw3Slide1.gif", "./src/assets/imagens/slider1.gif", "./src/assets/imagens/saw3Slide2.gif"],
+    'infoSaw4':
+    ["./src/assets/imagens/saw4slide1.gif", "./src/assets/imagens/saw4slide2.gif", "./src/assets/imagens/saw4slide3.gif"]
+
 }
 
 let pagina = window.location.pathname.replace("/ProjetoSAW/", "")
 pagina = pagina.replace(/\//g, "" )
-console.log(pagina)
 pagina = pagina.replace(".html", "")
 console.log(pagina)
 
@@ -19,7 +21,6 @@ console.log(pagina)
 let mostrarEstatica = false;
 const slider = document.querySelector("#slide")
 const slider2 = document.querySelector("#slide2")
-console.log(slider2)
 
 let i = 0
 
