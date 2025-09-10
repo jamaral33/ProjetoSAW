@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@font-face{
+    font-family: "MaggieMoo";
+    src: url(../assets/fontes/MaggieMoo.otf)
+}
+@font-face {
+    font-family: "MysticSingler";
+    src: url(../assets/fontes/mysticsingleri.ttf);
+}
+@font-face {
+    font-family: "MonsterScream";
+    src: url(../assets/fontes/MonsterScream.ttf);
+}
+
+:root{
+    --vermelhoHeader: #2C0000;
+    --vermelhoTexto: #B80000;
+    --pretoFundo: #0A0101;
+    --verdeFundo: #031303;
+    --vermelhoBanner: #591111;
+    --brancoTexto: #A09C78;
+    --vermelhoStroke: #3F0B0B; 
+    --branco: #FFFFFF;
+    --cinza: #161616;
+    --bege: #2D1B1B;
+    --verdeTexto: #9AA882;
+    --verdeFundo: #1E2513;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--pretoFundo);
+    background-image: url(../assets/imagens/estatica.png);
+    display: flex;
+    flex-direction: column;
+}
+/*HEADER*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--vermelhoHeader);
+    height: 13vh;
+    font-family: "Courier Prime", monospace;
+    font-size: 17px;
+    font-weight: 400;
+}
+.logoHeader{
+    display: flex;
+    align-items: center;
+    color: var(--vermelhoTexto);
+}
+.logoHeader img{
+    width: 100px;
+    height: 86px;
+}
+/*MENU*/
+#menu.close{
+    overflow: hidden;
+    right: -32vw
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 32vw;
+    height: 100vh;
+    padding: 5px 1em;
+    z-index: 3;
+    padding-left: 15vw;
+    color: var(--vermelhoTexto);
+    border-right: 1px solid var(--pretoFundo);
+    transition: 0.5s ease-in-out;
+}
+#serraMenu{
+    position: absolute;
+    top: -15vw;
+    right: -53vw;
+    height: 150vh;
+    width: 100vw;
+    z-index: -1;
+    animation: rodarSerra 10s linear infinite;
+}
+@keyframes rodarSerra {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#menuHeader{
+    font-family: 'MonsterScream',sans-serif;
+    gap: .5em;
+    font-size: 4em;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 30px;
+ 
+}
+
+#menu ul{
+    display: flex;
+    flex-direction: column ;
+    list-style: none;
+}
+#menu a, #menu .dropdownButton, #menuHeader button{
+    font-family: 'Montaga', sans-serif;
+    font-size: 2rem;
+    color: var(--vermelhoTexto);
+    padding: .5em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+}
+.iconeMenu{
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+    
+}
+.dropdownButton, #fecharBotao{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background:none;
+    font: inherit;
+    cursor: pointer;
+}
+#fecharBotao img{
+    width: 70px;
+    height: 70px;
+}
+.subMenu{
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+}
+#menu .subMenu a{
+    margin-left: 1em;
+    font-size: 1.5em;
+
+}
+#menu .subMenu.show{
+    /*Usado para calcular dinamicamente a altura da div pra conseguir usar a animação*/
+    /*Só disponivel no edge e chrome :(*/
+    height: calc-size(auto, size); 
+}
+.setaCima{
+    transform: rotate(180deg);
+}
+#menuBotao{
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    & img{
+        width: 50px;
+        height: 50px;
+    }
+}
+/*main*/
+main{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    background-color: var(--verdeFundo);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../assets/imagens/estatica.png);
+    padding-bottom: 50px;
+
+
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    color: var(--vermelhoHeader);
+    background-color: var(--vermelhoBanner);
+    width: 100%;
+    height: 50vh;
+    font-family: "MaggieMoo", sans-serif;
+    font-weight: 400;
+
+}
+.banner h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    opacity: 0.75;
+}
+
+.bemVindo{
+    overflow: hidden;
+}
+#bemVindoEsquerda{
+    position: absolute;
+    top: 35vh;
+    left: 30vh;
+}
+#bemVindoDireita{
+    position: absolute;
+    top: 35vh;
+    right: 20vw;
+}
+#bemVindoCentro{
+    position: absolute;
+    top: 55vh;
+    left: 41vw;
+    opacity: 1;
+}
+
+.bemVindo h1{
+    font-family: "MysticSingler", sans-serif;
+    color: var(--brancoTexto);
+    font-size: 9rem;
+    white-space: nowrap;
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: var(--vermelhoStroke);
+    opacity: 0.75;
+}
+.imagemBemVindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.imagemBemVindo img{
+    width: 45%;
+}
+.sangue{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+}
+#sangueEsquerda{
+     position: absolute;
+    left: 3vw;
+    top: 41.5vh;
+}
+#sangueDireita{
+    position: absolute;
+    right: 3vw;
+    top: 41.5vh;
+}
+.info{
+    padding: 150px 70px 70px 70px
+}
+.saw{
+    display: flex;
+    flex-direction: row;
+}
+.texto{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branco);
+
+}
+.texto h1{
+    font-family: "MonsterScream", sans-serif;
+    font-size: 3.5rem;
+    padding-bottom: 30px;
+}
+.texto p{
+    font-family: "Montaga", sans-serif;
+    font-size: 1.75rem;
+    text-align: justify;
+    font-weight: 400;
+
+}
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 70vh;
+    margin-right: 70px;
+    background-color: var(--vermelhoHeader);
+}
+.sliderPequeno{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 70vh;
+    background-color: var(--vermelhoHeader);
+    margin-left: 180px;
+}
+.quadrado{
+    position: relative;
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pretoFundo);
+}
+.quadrado2{
+    width: 95%;
+    height: 80%;
+    background-color: var(--cinza);
+}
+#tv{
+    position: relative;
+    top: 0%;
+
+    width: 100%;
+    height: 100%;
+}
+
+#slide{
+    position: absolute;
+    height: 65%;
+    width: 57%;
+    top: 15%;
+    left: 14%;
+
+}
+#slide2{
+    position: absolute;
+    height: 65%;
+    width: 57%;
+    top: 15%;
+    left: 14%;
+
+}
+
+#sawX{
+    position: absolute;
+    top: 150vh;
+    left: 20vw;
+    width: 35vw;
+    height: 20vw;
+}
+
+.filmes{    
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    align-items: flex-start;
+}
+.lista{
+    position: relative;
+    margin-left: 50px;
+    flex: 0 0 400px;
+}
+.infoSuspense{
+    margin-left: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+.lista{
+    position: relative;
+    margin-left: 50px;
+}
+.lista ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--bege);
+    border: 6px solid black;
+    height: 90vh;
+    list-style: none;
+    z-index: 2;
+}
+.lista ul h2{
+    background-color: var(--verdeFundo);
+    font-family: 'MonsterScream', sans-serif;
+    color: var(--verdeTexto);
+    font-size: 2rem;
+}
+.lista ul li a img{
+    width: 50px;
+    height: 50px;
+}
+.lista ul li a{
+    display: flex;
+    background-color: var(--vermelhoHeader);
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--verdeTexto);
+    font-family: 'Montaga', sans-serif;
+    border: 5px solid #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+.lista ul li a:hover{
+    color: var(--vermelhoTexto);
+}
+
+.sangueSlider{
+    position: absolute;
+    width: 30vw;
+    height: 58%;
+}
+.sliderDireita{
+    right: -5%;
+    top: -25%;
+}
+.sliderEsquerda{
+    left: -5%;
+    top: -25%;
+}
+#sangueLista{
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    bottom: -18%;
+    z-index: 0;
+    pointer-events: none;
+}
+.suspense{
+    width: 80%;
+    margin-top: 70PX;
+    margin-left: 170px;
+    margin-bottom: 70px;
+    text-align: justify;
+    color: var(--branco);
+    & p{
+        font-family: 'Montaga', sans-serif;
+        font-size: 1.5rem;
+    }
+    & h1{
+         font-family: 'MonsterScream', sans-serif;
+        font-size: 3rem;
+    }
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--vermelhoHeader);
+    height: 13vh;
+}
+footer h2{
+    font-size: 1rem;
+}
+.contatos a{
+    padding:0 25px 25px 0;
+}
+.contatos img{
+    width: 50px;
+    height: 50px;
+}
+#triciclo{
+    position: absolute;
+    width: 20vw;
+    height: 45vh;
+    top: 250vh;
+    left: 20vw;
+    pointer-events: none;
+}

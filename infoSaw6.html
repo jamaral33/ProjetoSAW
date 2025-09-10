@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./src/css/infoSaw6.css">
+    <title>SAW</title>
+    <link rel="shortcut icon" href="./src/assets/imagens/IconHeader.png"/>
+    <script src="./src/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logoHeader">
+            <img src = "./src/assets/imagens/IconHeader.png">
+            <h2>SawOS1.0</h2>
+        </div>
+        <button id="menuBotao">
+            <img src="./src/assets/imagens/menu.svg" onclick=trocarMenu()>
+        </button>
+    </header>
+    <nav id="menu" class="close">
+        <img src="./src/assets/imagens/serra.svg" id="serraMenu">
+        <ul>
+            <li id="menuHeader">
+                <h1>SAW</h1>
+                <button id="fecharBotao" onclick=trocarMenu()>
+                    <img src="./src/assets/imagens/close.svg">
+                </button>
+            </li>
+            <li>
+                <a href="./index.html">
+                    <img src="./src/assets/imagens/home.svg" class="iconeMenu">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <button class="dropdownButton" onclick=trocarSubMenu(this)>
+                    <span>Filmes</span>
+                    <img src="./src/assets/imagens/seta.svg" class="iconeMenu">
+                </button>
+                <ul class="subMenu">
+                    <li>
+                        <a href="./InfoSaw1.html">SAW I</a>
+                    </li>
+                    <li>
+                        <a href="./infoSaw2.html">SAW II</a>
+                    </li>
+                    <li>
+                        <a href="./InfoSaw3.html">SAW III</a>
+                    </li>
+                    <li>
+                        <a href="./infoSaw4.html">SAW IV</a>
+                    </li>
+                    <li>
+                        <a href="./InfoSaw5.html">SAW V</a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#">SAW VI</a>
+                    </li>
+                    <li>
+                        <a href="./InfoSawFinal.html">SAW: O final</a>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="#">Jogos mortais X</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+    <main>
+        <div class="banner">
+            <h2>TUDO SOBRE OS JOGOS MORTAIS</h2>
+            <div class="bemVindo">
+                <h1 id="bemVindoEsquerda">FILME</h1>
+                <h1 id="bemVindoDireita">SAW VI</h1>
+                <h1 ID ="bemVindoCentro">2009</h1>
+
+            </div>
+            <div class="imagemBemVindo">
+                <img src="./src/assets/imagens/jigsaw.png" alt="">
+            </div>
+        </div>
+        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueEsquerda">
+        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueDireita">
+        <div class="info">
+            <div class="saw">
+                <div class="slider">
+                    <div class="quadrado">
+                        <div class="quadrado2">
+                             <img src="./src/assets/imagens/tv.png" id="tv">
+                            <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="texto">
+                    <h1>ENREDO DO FILME</h1><p>Em Jogos Mortais VI (2009), a trama continua após a morte de John Kramer, o Jigsaw, mas seus ensinamentos seguem sendo aplicados por seus aprendizes. O foco da vez é William Easton, executivo de um plano de saúde conhecido por negar tratamentos médicos a clientes para aumentar os lucros da empresa. Ele é colocado em uma série de testes cruéis que o obrigam a confrontar as consequências de suas escolhas, decidindo quem deve viver ou morrer de acordo com critérios de justiça distorcidos. Paralelamente, o FBI e a polícia investigam as armadilhas deixadas para trás e começam a suspeitar de Hoffman, discípulo de Jigsaw, que tenta manipular as provas para não ser descoberto. O filme mistura críticas ao sistema de saúde com a violência característica da franquia, culminando em revelações sobre o legado de Kramer e a fragilidade da lealdade entre seus sucessores.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./src/assets/imagens/sawXLogo.png" id="sawX">
+        <div class="filmes">
+                <div class="lista">
+                    <ul>
+                        <h2>ACOMPANHE OS FILMES DA FRANQUIA</h2>
+                        <li><a href="./InfoSaw1.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais I(2004)</a></li>
+                        <li><a href="./infoSaw2.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais II(2005)</a></li>
+                        <li><a href="./InfoSaw3.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais III(2006)</a></li>
+                        <li><a href="./infoSaw4.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais IV(2007)</a></li>
+                        <li><a href="./InfoSaw5.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais V(2008)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais VI(2009)</a></li>
+                        <li><a href="./InfoSawFinal.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais: O final(2010)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais: JigSaw(2017)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Espiral: O legado dos jogos mortais(2021)</a></li>
+                        <li><a><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais X(2023)</a></li>
+                    </ul>
+                        <img src="./src/assets/imagens/sangue.png" id="sangueLista">           
+
+                </div>
+                <div class="infoSuspense">
+                    <div class="sliderPequeno">
+                        <div class="quadrado">
+                          <div class="quadrado2">
+                            <img src="./src/assets/imagens/tv.png" id="tv">
+                            <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide2">
+                          </div>
+                        </div>
+                        <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderEsquerda">
+                        <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderDireita">
+                    </div>
+                    <div class="suspense">
+                        <h1>BASTIDORES</h1>
+                        <p>Jogos Mortais VI (2009) foi dirigido por Kevin Greutert, que antes havia trabalhado como editor em todos os filmes da franquia. As filmagens aconteceram no Canadá em poucas semanas, mantendo o ritmo acelerado típico da série. O longa se destacou por trazer uma crítica social mais explícita, abordando o sistema de saúde e os planos de seguro, o que deu um tom diferente em relação aos anteriores. Devido ao alto nível de violência gráfica, o filme enfrentou censura e cortes em países como Espanha e Reino Unido. Algumas cenas alternativas chegaram a ser gravadas, mas não entraram no corte final e foram disponibilizadas apenas em versões de DVD e Blu-ray. Além disso, esse capítulo consolidou o personagem Mark Hoffman como sucessor de Jigsaw, algo que gerou opiniões divididas entre os fãs. Mantendo a tradição da saga, foi lançado próximo ao Halloween, reforçando o costume de trazer um novo Saw por ano no auge do sucesso da franquia.</p>
+                    </div>
+                </div>
+        </div>
+        <img src="./src/assets/imagens/triciclo.png" id="triciclo">
+    </main>
+    <footer>
+        <div class="logoHeader">
+            <img src = "./src/assets/imagens/IconHeader.png">
+            <h2>@2025-Todos os direitos reservados</h2>
+        </div>
+        <div class="contatos">
+            <a href="https://www.instagram.com/saw/"><img src="./src/assets/imagens/instagram.png"></a>
+            <a href="https://br.linkedin.com/in/jo%C3%A3o-paulo-amaral-de-araujo-b39233310?trk=people-guest_people_search-card"><img src="./src/assets/imagens/linkedin.png"></a>
+            <a href="https://github.com/jamaral33/ProjetoSAW"><img src="./src/assets/imagens/git_white.png"></a>"
+        </div>
+    </footer>
+</body>
+</html>

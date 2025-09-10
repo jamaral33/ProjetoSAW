@@ -7,9 +7,12 @@ const sliderImagens = {
 
     'InfoSaw3':
     ["./src/assets/imagens/saw3Slide1.gif", "./src/assets/imagens/slider1.gif", "./src/assets/imagens/saw3Slide2.gif"],
-    'infoSaw4':
-    ["./src/assets/imagens/saw4slide1.gif", "./src/assets/imagens/saw4slide2.gif", "./src/assets/imagens/saw4slide3.gif"]
 
+    'infoSaw4':
+    ["./src/assets/imagens/saw4slide1.gif", "./src/assets/imagens/saw4slide2.gif", "./src/assets/imagens/saw4slide3.gif"],
+
+    'infoSaw6':
+    ["./src/assets/imagens/saw6_1.gif", "./src/assets/imagens/saw6_2.gif"]
 }
 
 let pagina = window.location.pathname.replace("/ProjetoSAW/", "")
