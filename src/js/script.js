@@ -8,7 +8,9 @@ const sliderImagens = {
     'InfoSaw3':
     ["./src/assets/imagens/saw3Slide1.gif", "./src/assets/imagens/slider1.gif", "./src/assets/imagens/saw3Slide2.gif"],
     'infoSaw4':
-    ["./src/assets/imagens/saw4slide1.gif", "./src/assets/imagens/saw4slide2.gif", "./src/assets/imagens/saw4slide3.gif"]
+    ["./src/assets/imagens/saw4slide1.gif", "./src/assets/imagens/saw4slide2.gif", "./src/assets/imagens/saw4slide3.gif"],
+    'InfoSawFinal':
+    ["./src/assets/imagens/sawOFinalSlide1.webp", "./src/assets/imagens/sawOFinalSlide2.webp", "./src/assets/imagens/sawOFinalSlide3.webp"]
 
 }
 
