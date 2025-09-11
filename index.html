@@ -1,152 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="./src/css/estilo.css">
     <title>SAW</title>
-    <link rel="shortcut icon" href="./src/assets/imagens/IconHeader.png"/>
-    <script src="./src/js/script.js" defer></script>
+    <link rel="stylesheet" href="./src/css/loading.css">
+    <script src="./src/js/loading.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logoHeader">
-            <img src = "./src/assets/imagens/IconHeader.png">
-            <h2>SawOS1.0</h2>
+    <div class="boot">
+        <div id="sequencia0" class="sequencia">
+            <p>SAW OS 1.0 (1994)</p>
+            <p>Copyright (©) 2025 Raparigos Dev Group</p>
         </div>
-        <button id="menuBotao">
-            <img src="./src/assets/imagens/menu.svg" onclick=trocarMenu()>
-        </button>
-    </header>
-    <nav id="menu" class="close">
-        <img src="./src/assets/imagens/serra.svg" id="serraMenu">
-        <ul>
-            <li id="menuHeader">
-                <h1>SAW</h1>
-                <button id="fecharBotao" onclick=trocarMenu()>
-                    <img src="./src/assets/imagens/close.svg">
-                </button>
-            </li>
-            <li>
-                <a href="./index.html">
-                    <img src="./src/assets/imagens/home.svg" class="iconeMenu">
-                    <span>HOME</span>
-                </a>
-            </li>
-            <li>
-                <button class="dropdownButton" onclick=trocarSubMenu(this)>
-                    <span>Filmes</span>
-                    <img src="./src/assets/imagens/seta.svg" class="iconeMenu">
-                </button>
-                <ul class="subMenu">
-                    <li>
-                        <a href="./InfoSaw1.html">SAW I</a>
-                    </li>
-                    <li>
-                        <a href="./infoSaw2.html">SAW II</a>
-                    </li>
-                    <li>
-                        <a href="./InfoSaw3.html">SAW III</a>
-                    </li>
-                    <li>
-                        <a href="./infoSaw4.html">SAW IV</a>
-                    </li>
-                    <li>
-                        <a href="./InfoSaw5.html">SAW V</a>
-                    </li>
-                    </li>
-                    <li>
-                        <a href="./infoSaw6.html">SAW VI</a>
-                    </li>
-                    <li>
-                        <a href="./InfoSawFinal.html">SAW: O final</a>
-                    </li>
-                    <li>
-                        <a href="./infoSawX.html">Jogos mortais X</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <div class="banner">
-            <h2>TUDO SOBRE OS JOGOS MORTAIS</h2>
-            <div class="bemVindo">
-                <h1 id="bemVindoEsquerda">SEJA BEM</h1>
-                <h1 id="bemVindoDireita">AO JOGO</h1>
-                <h1 ID ="bemVindoCentro">vindo</h1>
+        <div id="sequencia1" class="sequencia">
+            <p>[SEQUENCIA DE BOOT INICIADA]</p>
+            <p>→ Inicializando núcleo do sistema...<span class="textoAtivado">OK</span></p>
+            <p>→ Verificando Memoria RAM... <span class="textoAtivado">OK</span> </p>
+            <p>→ Carregando módulos do kernel... <span class="textoAtivado">OK</span>   </p>
+            <p>→ Detectando dispositivos de armazenamento:  <span class="textoAtivado">512kb</span></p>
+        </div>
+        <div id="sequencia2" class="sequencia">
+            <p>[VERIFICACAO DE SEGURANÇA]</p>
+            <p>→ Chaves de criptografia validadas  </p>
+            <p>→ Firewall ativado  </p>
+            <p>→ Sistema de deteccao de intrusao... PRONTO  </p>
+        </div>
+        <div id="sequencia3" class="sequencia">
+            <p>[VERIFICACAO DE REDE]</p>
+            <p>→ Detectando redes disponiveis...</p>
+            <p>→ Estabelecendo conexão segura...</p>
+            <p>→ Iniciando FireWall...</p>
+        </div>
+        <div id="sequencia4" class="sequencia">
+            <p>[VERIFICACOES FINAIS]</p>
+            <p>→ Carregando interface grafica...</p>
+            <p>→ Carregando Dados do sistema... </p>
+        </div>
+        <div id="sequencia5" class="sequencia">
+            <p>[SAW OS 1.0 INICIADO]</p>
+            <p>29/10/2004</p>
+            <p>Proseguindo...</p>
+        </div>
+    </div>
+    <div class="logo">
+        <pre id="ascii"> ____    ___        __   ___  ____    _   ___  
+/ ___|  / \ \      / /  / _ \/ ___|  / | / _ \ 
+\___ \ / _ \ \ /\ / /  | | | \___ \  | || | | |
+ ___) / ___ \ V  V /   | |_| |___) | | || |_| |
+|____/_/   \_\_/\_/     \___/|____/  |_(_)___/ </pre>
+    <p id="carregamento">[░░░░░░░░░░░░░░░░░░░░] </p>
+    <p id="copyright">Copyright (©) 2025 Raparigos Dev Group</p>
 
-            </div>
-            <div class="imagemBemVindo">
-                <img src="./src/assets/imagens/jigsaw.png" alt="">
-            </div>
-        </div>
-        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueEsquerda">
-        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueDireita">
-        <div class="info">
-            <div class="saw">
-                <div class="texto">
-                    <h1>O QUE É SAW?</h1>
-                    <p>A franquia Saw é uma série de filmes de terror e suspense iniciada em 2004, criada por James Wan e Leigh Whannell. A história gira em torno do serial killer conhecido como Jigsaw, ou John Kramer, que não mata diretamente suas vítimas, mas as coloca em armadilhas mortais que testam sua vontade de viver, geralmente como punição por atitudes consideradas imorais. Com o tempo, a trama se aprofunda em sua filosofia distorcida de redenção e nos conflitos entre seus aprendizes, revelando uma narrativa complexa com reviravoltas, conexões entre personagens e cronologia não linear. Marcada por cenas gráficas e jogos sádicos, Saw se tornou um ícone do subgênero conhecido como "torture porn", influenciando o cinema de horror contemporâneo e acumulando diversos filmes ao longo dos anos, incluindo sequências, prequels e spin-offs como Spiral (2021) </p>
-                </div>
-                <div class="slider">
-                    <div class="quadrado">
-                        <div class="quadrado2">
-                             <img src="./src/assets/imagens/tv.png" id="tv">
-                            <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./src/assets/imagens/sawXLogo.png" id="sawX">
-        <div class="filmes">
-                <div class="infoSuspense">
-                    <div class="slider sliderPequeno">
-                        <div class="quadrado">
-                            <div class="quadrado2">
-                                <img src="./src/assets/imagens/tv.png" id="tv">
-                                <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide2">
-                            </div>
-                        </div>
-                    <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderEsquerda">
-                    <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderDireita">
-                    </div>
-                    <div class="suspense">
-                        <h1>O QUE É SUSPENSE?</h1>
-                        <p>O gênero de Suspense é utilizado na mídia há muitos anos. Focando-se em prender o público em uma narrativa de muita tensão, com o objetivo de gerar expectativas e, consequentemente, ansiedade no público. Alguns filmes e franquias populares que fazem parte desse gênero são: Jogos Vorazes, Silêncio dos Inocentes, Psicopata Americano, Alien e dentre outras. Vale ressaltar que suspense muitas vezes também é utilizado juntamente do terror para justamente criar o clima de mistério e expectativa característico dele. </p>
-                    </div>
-                </div>
+    </div>
 
-                <div class="lista">
-                    <ul>
-                        <h2>ACOMPANHE OS FILMES DA FRANQUIA</h2>
-                        <li><a href="./InfoSaw1.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais I(2004)</a></li>
-                        <li><a href="./infoSaw2.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais II(2005)</a></li>
-                        <li><a href="/InfoSaw3.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais III(2006)</a></li>
-                        <li><a href="./infoSaw4.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais IV(2007)</a></li>
-                        <li><a href="./InfoSaw5.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais V(2008)</a></li>
-                        <li><a href="./infoSaw6.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais VI(2009)</a></li>
-                        <li><a href="./InfoSawFinal.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais: O final(2010)</a></li>
-                        <li><a href="./infoSawX.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais X(2023)</a></li>
-                    </ul>
-                        <img src="./src/assets/imagens/sangue.png" id="sangueLista">           
-
-                </div>
-        </div>
-        <img src="./src/assets/imagens/triciclo.png" id="triciclo">
-    </main>
-    <footer>
-        <div class="logoHeader">
-            <img src = "./src/assets/imagens/IconHeader.png">
-            <h2>@2025-Todos os direitos reservados</h2>
-        </div>
-        <div class="contatos">
-            <a href="https://www.instagram.com/saw/"><img src="./src/assets/imagens/instagram.png"></a>
-            <a href="https://br.linkedin.com/in/jo%C3%A3o-paulo-amaral-de-araujo-b39233310?trk=people-guest_people_search-card"><img src="./src/assets/imagens/linkedin.png"></a>
-            <a href="https://github.com/jamaral33/ProjetoSAW"><img src="./src/assets/imagens/git_white.png"></a>"
-        </div>
-
-    </footer>
 </body>
 </html>

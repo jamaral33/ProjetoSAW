@@ -1,5 +1,5 @@
 const sliderImagens = {
-    'index' : 
+    'home' : 
     ["./src/assets/imagens/slider1.gif", "./src/assets/imagens/slider2.jpg", "./src/assets/imagens/slider3.gif"],
     
     'InfoSaw1' :

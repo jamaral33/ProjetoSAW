@@ -1,0 +1,59 @@
+@font-face{
+    font-family: "retroComputer";
+    src: url(../assets/fontes/retroComputer.ttf)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    font-family: 'retroComputer', sans-serif;
+    color: red;
+    font-size: 1.35rem;
+}
+.sequencia{
+    margin-top: 3vh;
+}
+.sequencia p {
+    margin-bottom: 10px;
+}
+.mostrar{
+    visibility: visible;
+}
+.mostrarLogo{
+    display: block;
+}
+.esconder{
+    display: none;
+}
+.boot{
+    visibility: hidden;
+}
+
+.logo{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 3rem;
+}
+#ascii{
+    position: absolute;
+    top: 10vh
+}
+#copyright{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 2rem;
+}
