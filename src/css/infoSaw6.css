@@ -213,7 +213,7 @@ main{
 #bemVindoDireita{
     position: absolute;
     top: 35vh;
-    right: 20vw;
+    right: 15vw;
 }
 #bemVindoCentro{
     position: absolute;
@@ -464,7 +464,7 @@ footer h2{
     position: absolute;
     width: 20vw;
     height: 45vh;
-    top: 250vh;
+    top: 270vh;
     left: 20vw;
     pointer-events: none;
 }

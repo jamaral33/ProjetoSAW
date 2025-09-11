@@ -3,7 +3,9 @@ const sliderImagens = {
     ["./src/assets/imagens/slider1.gif", "./src/assets/imagens/slider2.jpg", "./src/assets/imagens/slider3.gif"],
     
     'InfoSaw1' :
-    ["./src/assets/imagens/GordonTape(saw1).gif", "./src/assets/imagens/AdamScreaming(saw1).jpg", "./src/assets/imagens/AmandaBearTrap(saw1).gif"],
+    ["./src/assets/imagens/GordonTape(saw1).gif", "./src/assets/imagens/saw1Slide2", "./src/assets/imagens/AmandaBearTrap(saw1).gif"],
+    'infoSaw2':
+    ["./src/assets/imagens/saw2Slide1.gif", "./src/assets/imagens/saw2Slide2.gif", "./src/assets/imagens/saw2Slide3.gif"],
 
     'InfoSaw3':
     ["./src/assets/imagens/saw3Slide1.gif", "./src/assets/imagens/slider1.gif", "./src/assets/imagens/saw3Slide2.gif"],
@@ -12,7 +14,7 @@ const sliderImagens = {
     ["./src/assets/imagens/saw4slide1.gif", "./src/assets/imagens/saw4slide2.gif", "./src/assets/imagens/saw4slide3.gif"],
 
     'infoSaw6':
-    ["./src/assets/imagens/saw6_1.gif", "./src/assets/imagens/saw6_2.gif"],
+    ["./src/assets/imagens/saw6Slide2.gif", "./src/assets/imagens/saw6Slide1.gif", "./src/assets/imagens/saw6Slide3.gif"],
     'InfoSawFinal':
     ["./src/assets/imagens/sawOFinalSlide3.webp", "./src/assets/imagens/sawOFinalSlide2.webp", "./src/assets/imagens/sawOFinalSlide1.webp"],
     'infoSawX':
