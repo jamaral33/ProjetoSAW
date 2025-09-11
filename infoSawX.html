@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./src/css/infoSawX.css">
+    <title>SAW</title>
+    <link rel="shortcut icon" href="./src/assets/imagens/IconHeader.png"/>
+    <script src="./src/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logoHeader">
+            <img src = "./src/assets/imagens/IconHeader.png">
+            <h2>SawOS1.0</h2>
+        </div>
+        <button id="menuBotao">
+            <img src="./src/assets/imagens/menu.svg" onclick=trocarMenu()>
+        </button>
+    </header>
+    <nav id="menu" class="close">
+        <img src="./src/assets/imagens/serra.svg" id="serraMenu">
+        <ul>
+            <li id="menuHeader">
+                <h1>SAW</h1>
+                <button id="fecharBotao" onclick=trocarMenu()>
+                    <img src="./src/assets/imagens/close.svg">
+                </button>
+            </li>
+            <li>
+                <a href="./index.html">
+                    <img src="./src/assets/imagens/home.svg" class="iconeMenu">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <button class="dropdownButton" onclick=trocarSubMenu(this)>
+                    <span>Filmes</span>
+                    <img src="./src/assets/imagens/seta.svg" class="iconeMenu">
+                </button>
+                <ul class="subMenu">
+                    <li>
+                        <a href="./InfoSaw1.html">SAW I</a>
+                    </li>
+                    <li>
+                        <a href="./infoSaw2.html">SAW II</a>
+                    </li>
+                    <li>
+                        <a href="./InfoSaw3.html">SAW III</a>
+                    </li>
+                    <li>
+                        <a href="./infoSaw4.html">SAW IV</a>
+                    </li>
+                    <li>
+                        <a href="./InfoSaw5.html">SAW V</a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="./infoSaw6.html">SAW VI</a>
+                    </li>
+                    <li>
+                        <a href="./InfoSawFinal.html">SAW: O final</a>
+                    </li>
+                    <li>
+                        <a href="./infoSawX.html">Jogos mortais X</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="banner">
+            <h2>TUDO SOBRE OS JOGOS MORTAIS</h2>
+            <div class="bemVindo">
+                <h1 id="bemVindoEsquerda">FILME</h1>
+                <h1 id="bemVindoDireita">SAW X</h1>
+                <h1 ID ="bemVindoCentro">2023</h1>
+
+            </div>
+            <div class="imagemBemVindo">
+                <img src="./src/assets/imagens/jigsaw.png" alt="">
+            </div>
+        </div>
+        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueEsquerda">
+        <img src="./src/assets/imagens/sangue.png" class="sangue" id="sangueDireita">
+        <div class="info">
+            <div class="saw">
+                <div class="slider">
+                    <div class="quadrado">
+                        <div class="quadrado2">
+                             <img src="./src/assets/imagens/tv.png" id="tv">
+                            <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="texto">
+                    <h1>ENREDO DO FILME</h1>
+                    <p>A história se passa entre os acontecimentos do primeiro e do segundo filme, mostrando um lado mais humano de John Kramer. Doente e em estágio avançado de câncer, ele descobre a possibilidade de uma cirurgia experimental revolucionária no México, oferecida por uma equipe médica que promete a cura. Desesperado por uma chance de viver, John viaja até lá e passa por todo o processo, acreditando que finalmente terá mais tempo de vida. Porém, logo depois descobre que tudo não passava de uma fraude elaborada: os médicos eram charlatões que enganavam pacientes terminais em troca de dinheiro. Sentindo-se traído e furioso, John decide que essas pessoas precisam enfrentar suas próprias escolhas. Ele então organiza uma série de armadilhas brutais, aplicando sua filosofia de “dar valor à vida” de forma ainda mais pessoal. Cada um dos responsáveis pela farsa médica é colocado em jogos cruéis, obrigados a fazer sacrifícios dolorosos para sobreviver. Amanda, já envolvida como sua aprendiz, o auxilia durante toda a execução do plano.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./src/assets/imagens/sawXLogo.png" id="sawX">
+        <div class="filmes">
+                <div class="lista">
+                    <ul>
+                        <h2>ACOMPANHE OS FILMES DA FRANQUIA</h2>
+                        <li><a href="./InfoSaw1.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais I(2004)</a></li>
+                        <li><a href="./infoSaw2.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais II(2005)</a></li>
+                        <li><a href="/InfoSaw3.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais III(2006)</a></li>
+                        <li><a href="./infoSaw4.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais IV(2007)</a></li>
+                        <li><a href="./InfoSaw5.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais V(2008)</a></li>
+                        <li><a href="./infoSaw6.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais VI(2009)</a></li>
+                        <li><a href="./InfoSawFinal.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais: O final(2010)</a></li>
+                        <li><a href="./infoSawX.html"><img src="./src/assets/imagens/playIcon.svg"> Jogos Mortais X(2023)</a></li>
+                    </ul>
+                        <img src="./src/assets/imagens/sangue.png" id="sangueLista">           
+
+                </div>
+                <div class="infoSuspense">
+                    <div class="sliderPequeno">
+                        <div class="quadrado">
+                          <div class="quadrado2">
+                            <img src="./src/assets/imagens/tv.png" id="tv">
+                            <img src="./src/assets/imagens/slider1.gif" alt="slider" id="slide2">
+                          </div>
+                        </div>
+                        <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderEsquerda">
+                        <img src="./src/assets/imagens/sangue.png" class="sangueSlider sliderDireita">
+                    </div>
+                    <div class="suspense">
+                        <h1>BASTIDORES</h1>
+                        <p> Jogos Mortais X, lançado em 2023, trouxe um retorno ao estilo clássico da franquia e foi muito bem recebido pelos fãs. A história se passa entre o primeiro e o segundo filme, funcionando como um prelúdio, e mostra John Kramer viajando para o México em busca de uma cura para o câncer. Ao descobrir que foi enganado por golpistas, ele decide aplicar sua própria “justiça” usando armadilhas brutais.
+
+O filme se destacou por dar um foco muito maior ao personagem de Tobin Bell, que aparece em tela como nunca antes, mostrando um lado mais humano e até vulnerável de Jigsaw. Isso agradou bastante ao público, já que colocou o vilão novamente no centro da narrativa, diferente de algumas continuações anteriores.</p>
+                    </div>
+                </div>
+        </div>
+        <img src="./src/assets/imagens/triciclo.png" id="triciclo">
+    </main>
+    <footer>
+        <div class="logoHeader">
+            <img src = "./src/assets/imagens/IconHeader.png">
+            <h2>@2025-Todos os direitos reservados</h2>
+        </div>
+        <div class="contatos">
+            <a href="https://www.instagram.com/saw/"><img src="./src/assets/imagens/instagram.png"></a>
+            <a href="https://br.linkedin.com/in/jo%C3%A3o-paulo-amaral-de-araujo-b39233310?trk=people-guest_people_search-card"><img src="./src/assets/imagens/linkedin.png"></a>
+            <a href="https://github.com/jamaral33/ProjetoSAW"><img src="./src/assets/imagens/git_white.png"></a>"
+        </div>
+    </footer>
+</body>
+</html>

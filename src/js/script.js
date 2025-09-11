@@ -14,7 +14,9 @@ const sliderImagens = {
     'infoSaw6':
     ["./src/assets/imagens/saw6_1.gif", "./src/assets/imagens/saw6_2.gif"],
     'InfoSawFinal':
-    ["./src/assets/imagens/sawOFinalSlide3.webp", "./src/assets/imagens/sawOFinalSlide2.webp", "./src/assets/imagens/sawOFinalSlide1.webp"]
+    ["./src/assets/imagens/sawOFinalSlide3.webp", "./src/assets/imagens/sawOFinalSlide2.webp", "./src/assets/imagens/sawOFinalSlide1.webp"],
+    'infoSawX':
+    ["./src/assets/imagens/sawXslide1.gif", "./src/assets/imagens/sawXslide2.gif", "./src/assets/imagens/sawXslide3.gif"],
 }
 
 let pagina = window.location.pathname.replace("/ProjetoSAW/", "")
