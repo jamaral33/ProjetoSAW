@@ -3,7 +3,7 @@ const sliderImagens = {
     ["./src/assets/imagens/slider1.gif", "./src/assets/imagens/slider2.jpg", "./src/assets/imagens/slider3.gif"],
     
     'InfoSaw1' :
-    ["./src/assets/imagens/GordonTape(saw1).gif", "./src/assets/imagens/saw1Slide2", "./src/assets/imagens/AmandaBearTrap(saw1).gif"],
+    ["./src/assets/imagens/GordonTape(saw1).gif", "./src/assets/imagens/saw1Slide2.gif", "./src/assets/imagens/AmandaBearTrap(saw1).gif"],
     'infoSaw2':
     ["./src/assets/imagens/saw2Slide1.gif", "./src/assets/imagens/saw2Slide2.gif", "./src/assets/imagens/saw2Slide3.gif"],
 
