@@ -208,12 +208,12 @@ main{
 #bemVindoEsquerda{
     position: absolute;
     top: 35vh;
-    left: 3vw;
+    left: 4.5vw;
 }
 #bemVindoDireita{
     position: absolute;
     top: 35vh;
-    right: 4vw;
+    right:5vw;
 }
 #bemVindoCentro{
     position: absolute;
